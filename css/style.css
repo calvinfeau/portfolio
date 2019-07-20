@@ -13,58 +13,21 @@
     src: url('fonts/GT-Pressura-Mono-Regular.woff') format('woff');
 }
 
-@keyframes scrolldown {
-    0% {
-        background-color: #38429B;
-        /* opacity: 1; */
-    }
-    100% {
-        background-color: #51806D;
-        /* opacity: 1; */
-    }
+@keyframes downarrow {
+    0% { -webkit-transform: translateY(0); opacity: 0.4 }
+    100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
 }
-@keyframes scrollup {
-    0% {
-        background-color: #51806D;
-        /* opacity: 1; */
-    }
-    100% {
-        background-color: #38429B;
-        /* opacity: 1; */
-    }
-}
-@keyframes fadeInBottom {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes fadeInTop {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 1;
-    }
-}
+.down {animation: downarrow 0.6s infinite alternate ease-in-out;}
 
 body {margin: 0;}
-
 section {
     margin: 5vh 5vw;
     height: 90vh;
     width: 90vw;
 }
 
-.font {color: #FFF;}
-.txt-sp-1 {letter-spacing: 2px;}
-.txt-sp-2 {letter-spacing: 0.5px;}
-.txt-sp-3 {letter-spacing: 1px;}
 
+.font {color: #FFF;}
 .font-w {font-weight: bold;}
 
 .font-1 {font-family: "Euclid Flex Trial";}
@@ -81,6 +44,10 @@ section {
 .txt-1 {text-align: center;}
 .txt-2 {vertical-align: middle;}
 .txt-3 {text-align: right;}
+
+.txt-sp-1 {letter-spacing: 2px;}
+.txt-sp-2 {letter-spacing: 0.5px;}
+.txt-sp-3 {letter-spacing: 1px;}
 
 .b-color-1 {background-color: #38429B;}
 .b-color-2 {background-color: #51806D;}
@@ -113,7 +80,6 @@ section {
     color: #FFF;
     text-decoration: none;
 }
-
 .collapse.width {
     height: auto;
     -webkit-transition: width 0.35s ease;
@@ -121,100 +87,3 @@ section {
     -o-transition: width 0.35s ease;
     transition: width 0.35s ease;
 }
-
-/* 
-.container {
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5vh 5vw;
-    height: 90vh;
-    width: 90vw;
-}
-.sub-container {
-    height: 70vh;
-    width: 60vw;
-}
-.name {
-    font-size: 30px;
-    margin-top: 10vh;
-}
-.title {
-    font-size: 40px;
-    margin-top: 10vh;
-}
-.large-title {
-    font-size: 10vh;
-    margin-top: 20vh;
-} */
-
-
-/* .grid {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 15% 20% 50% 15%;
-    grid-template-areas: 
-    ". . ."
-    ". name ."
-    ". title ."
-    "bottom-left . .";
-    justify-items: center;
-    align-items: center;
-} */
-
-/* .table {
-    display: flex;
-    flex-direction: column;
-    border-top: white 1px solid; 
-}
-.row {
-    border-bottom: white 1px solid; 
-    display: flex;
-    justify-content: space-between;
-}
-.project {
-    font-family: 'GT Pressura Mono';
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 15vw;
-}
-.description {
-    width: 42vw;
-    font-family: "GT America Trial";
-    font-size: 25px;
-}
-.button {
-    margin-top: 1vh;
-    font-size: 25px;
-    width: 3vw;
-    text-align: right;
-} */
-
-
-
-
-/* ____________ */
-/* For corner labels */
-/* .label {
-    color: #FFF;
-    font-family: "GT Pressura Mono";
-    font-size: 10px;
-    letter-spacing: 2px;
-    transform: scaleX(-1) scaleY(-1) rotate(90deg);
-    position: -webkit-sticky;
-    position: fixed;
-}
-
-.top-right {
-    top: 18vh;
-    left: 85vw;
-}
-
-.bottom-left {
-    bottom: 13vh;
-    left: 4vw;
-} */
-/* ____________ */
