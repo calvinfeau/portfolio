@@ -13,19 +13,45 @@
     src: url('fonts/GT-Pressura-Mono-Regular.woff') format('woff');
 }
 
+/* Arrow animation */
 @keyframes downarrow {
     0% { -webkit-transform: translateY(0); opacity: 0.4 }
     100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
 }
 .down {animation: downarrow 0.6s infinite alternate ease-in-out;}
+.collapse.width {
+    height: auto;
+    -webkit-transition: width 0.35s ease;
+    -moz-transition: width 0.35s ease;
+    -o-transition: width 0.35s ease;
+    transition: width 0.35s ease;
+}
+/* ---- */
 
-body {margin: 0;}
+body {
+    height: 90vh;
+    width: 90vw;
+    border-bottom: #FFF solid 5vh;
+    border-top: #FFF solid 5vh;
+    border-right: #FFF solid 5vw;
+    border-left: #FFF solid 5vw;
+    scroll-behavior: smooth;
+}
+
+#wrapper {
+    height: 90vh;
+    width: 90vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+#wrapper section {
+    scroll-snap-align: start;
+}
+
 section {
-    margin: 5vh 5vw;
     height: 90vh;
     width: 90vw;
 }
-
 
 .font {color: #FFF;}
 .font-w {font-weight: bold;}
@@ -79,11 +105,4 @@ section {
 .toggle:hover {
     color: #FFF;
     text-decoration: none;
-}
-.collapse.width {
-    height: auto;
-    -webkit-transition: width 0.35s ease;
-    -moz-transition: width 0.35s ease;
-    -o-transition: width 0.35s ease;
-    transition: width 0.35s ease;
 }
