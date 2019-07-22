@@ -13,12 +13,17 @@
     src: url('fonts/GT-Pressura-Mono-Regular.woff') format('woff');
 }
 
+
 /* Arrow animation */
 @keyframes downarrow {
     0% { -webkit-transform: translateY(0); opacity: 0.4 }
     100% { -webkit-transform: translateY(0.4em); opacity: 0.9 }
 }
 .down {animation: downarrow 0.6s infinite alternate ease-in-out;}
+/* ---- */
+
+
+/* Project details */
 .collapse.width {
     height: auto;
     -webkit-transition: width 0.35s ease;
@@ -28,9 +33,31 @@
 }
 /* ---- */
 
+
+/* "Parallax" effect */
+#s-1 {z-index: 1;}
+#s-2 {z-index: 2;}
+#s-3 {z-index: 3;}
+#s-4 {z-index: 4;}
+#s-5 {z-index: 5;}
+/* ---- */
+
+
+/* Title fade effect */
+/* @keyframes fade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+.title-fade {
+    animation: fade 1s;
+} */
+/* ---- */
+
+
 body {
     height: 90vh;
-    width: 90vw;
+    width: 100vw;
+    border: solid white 5vmin;
     border-bottom: #FFF solid 5vh;
     border-top: #FFF solid 5vh;
     border-right: #FFF solid 5vw;
@@ -41,15 +68,27 @@ body {
 #wrapper {
     height: 90vh;
     width: 90vw;
+    top: 5vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    position: fixed;
 }
 #wrapper section {
     scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 section {
     height: 90vh;
+    width: 90vw;
+    position: sticky;
+}
+
+#name {
+    position: fixed;
+    z-index: 6;
+    top: 5vh;
+    height: 10vh;
     width: 90vw;
 }
 
@@ -57,7 +96,7 @@ section {
 .font-w {font-weight: bold;}
 
 .font-1 {font-family: "Euclid Flex Trial";}
-.font-2 {font-family: "GT America Trial";}
+.font-2 {font-family: "GT America Trial"; font-weight: 100;}
 .font-3 {font-family: 'GT Pressura Mono';}
 .font-4 {font-family: 'Playfair Display', serif;}
 
@@ -79,8 +118,11 @@ section {
 .b-color-2 {background-color: #51806D;}
 .b-color-3 {background-color: #D74134;}
 
-.pad-1 {padding: 10% 10% 0;}
-.pad-2 {padding: 3% 5% 7%;}
+.pad-footer {padding: 15vh 0 0;}
+.pad-list {padding: 20vh 0 0;}
+.pad-name {padding: 5vh 0;}
+.pad-intro {padding: 30vh 5vw 0;}
+.pad-title {padding: 40vh 10vw}
 .pad-3 {padding-left: 20%;}
 .pad-4 {padding-right: 20%;}
 .pad-5 {padding-top: 2vh;}
@@ -100,9 +142,12 @@ section {
 .b-top {border-top: #FFF solid 1px;}
 .b-bottom {border-bottom: #FFF solid 1px;}
 
-.link {text-decoration: underline}
-.link:hover {color: #FFF;}
-.toggle:hover {
+.link {
+    border-bottom:1px solid white;
+    padding-bottom:2px;
+}
+.link:hover {
     color: #FFF;
     text-decoration: none;
 }
+.toggle:hover {color: white; text-decoration: none;}
