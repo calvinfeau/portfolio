@@ -82,6 +82,7 @@ section {
     height: 90vh;
     width: 90vw;
     position: sticky;
+    top: 0vh;
 }
 
 #name {
@@ -98,7 +99,7 @@ section {
 .font-1 {font-family: "Euclid Flex Trial";}
 .font-2 {font-family: "GT America Trial"; font-weight: 100;}
 .font-3 {font-family: 'GT Pressura Mono';}
-.font-4 {font-family: 'Playfair Display', serif;}
+.font-4 {font-family: 'Almendra Display', cursive;}
 
 .font-size-xl {font-size: 8vmin;}
 .font-size-l {font-size: 6vmin;}
