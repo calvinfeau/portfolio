@@ -17,13 +17,13 @@
 
   <div id="wrapper">
     
-  <div id='name' class="pad-name name font font-1 txt-1 txt-sp-1 font-size-m">Calvin Feau</div>
+  <div class="name font font-1 txt-1 txt-sp-1 font-size-m">Calvin Feau</div>
 
   <section 
   id="s-1"
   class="b-color-1 font font-1 txt-1 txt-sp-1">
     <div class="pad-intro font-size-l">I'm a full stack software engineer, and a passionate problem solver who enjoys getting lost in the flow of web development.</div>
-    <div class="flex flex-3 pad-8"><a href="#s-2"><i class="font material-icons down">arrow_downward</i></a></div>
+    <div class="flex flex-3"><a class="pad-arrow" href="#s-3"><i class="font material-icons down">arrow_downward</i></a></div>
   </section>
   
   <section 
@@ -32,7 +32,224 @@
     <div class="pad-title font-size-xl">Projects</div>
   </section>
 
+
   <section 
+  id="s-3"
+  class="pad-list font txt-sp-2 overflow-auto">
+
+    <div class="projects b-color-4 ">
+
+      <div class="p1 pad-project font">
+        <div><img src="./css/images/groceries_helper.png" alt="groceries-helper homepage"></div>
+        <div>
+          Full-stack MERN app used to assist the user to track what are his/her current food stocks. 
+          Also provides a groceries list interface.
+        </div>
+        <div>React, Node, MongoDB, JavaScript, HTML5, CSS3, Bootstrap, Jwt, Mongoose</div>
+        <div>
+          <!-- <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://groceries-helper.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a>             -->
+        </div>
+      </div>
+
+      <div class="p2 pad-project font">
+        <div><img src="./css/images/the_datebase.png" alt="the datebase homepage"></div>
+        <div>
+          Web platform designed to help singles tackle the messy world of dating. Users can store their dating contacts and track their dating activity all in one convenient place.
+        </div>
+        <div>Python, Django, PostgreSQL, AWS, HTML5, CSS3, Materialize, JavaScript</div>
+        <div>
+          <!-- <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://datebase-app.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a>             -->
+        </div>
+      </div>
+
+      <div class="p3 pad-project font">
+        <div><img src="./css/images/travel_track.png" alt="travel-track homepage"></div>
+        <div>
+          Travel-track is full stack application offering a trip tracking service and a trip organizational service.
+        </div>
+        <div>Javascript, Node, MongoDB, HTML5, CSS3, EJS, Mongoose</div>
+        <div>
+            <!-- <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://travel-track.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a> -->
+        </div>
+      </div>
+
+      <div class="p4 pad-project font">
+        <div><img src="./css/images/war_card_game.png" alt="card game homepage"></div>
+        <div>
+          A browser based game with two different versions of the classic card game “war”.
+        </div>
+        <div>Javascript, HTML5, CSS3</div>
+        <div>
+          <!-- <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://calvinfeau.github.io/war-game/" target="_blank" class="font link txt-sp-2">View Project</a>             -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <section 
+  id="s-3"
+  class="pad-list b-color-2 font txt-sp-2 overflow-auto">
+   <div id="projects-wrapper">
+    <div class="pad-3 pad-4 flex flex-2">
+      <div class="pad-5 pad-6 font-3 font-size-xs w-1 b-bottom b-top txt-sp-3">
+        <div>PROJECT:
+            <br>
+            SafeParking LA
+        </div>
+        <br>
+        <div>TECHNOLOGIES:
+            <br>
+            React, Node, MongoDB, Javascript, <br>HTML5, CSS3, Bootstrap, Mongoose
+        </div>
+      </div>
+      <div class="flex">
+        <div class="pad-5 pad-6 font-2 font-size-s w-2 b-bottom b-top txt-sp-2">
+          3-day hackathon challenge for a Los Angeles based nonprofit providing safe parking options for people experiencing homelessness in their vehicles.          <div class="collapse" id="pro-1">
+            <div class="font-size-xs">
+              <br><ul>
+                <li>Worked with a team of 4 UX/UI designers and another developer. Led the development process and built the entire backend</li>
+                <li>Used Zeplin to accurately follow designers guidelines and Github for version control during development</li>
+                <li>Won the judges price of the contest</li>
+              </ul>
+              <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://safeparkingla.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a>            
+            </div>
+          </div>
+        </div>
+        <a data-toggle="collapse" href="#pro-1" role="button" aria-expanded="false" aria-controls="collapseExample"class="pad-5 pad-6 font font-4 font-size-l w-3 txt-3 b-bottom b-top toggle">+</a>
+      </div>
+    </div>
+    <div class="pad-3 pad-4 flex flex-2">
+      <div class="pad-5 pad-6 font-3 font-size-xs w-1 b-bottom b-top txt-sp-3">
+        <div>PROJECT:
+            <br>
+            Groceries Helper
+        </div>
+        <br>
+        <div>TECHNOLOGIES:
+            <br>
+            React, Node, MongoDB, Javascript, <br>HTML5, CSS3, Bootstrap, Jwt, Mongoose
+        </div>
+      </div>
+      <div class="flex">
+        <div class="pad-5 pad-6 font-2 font-size-s w-2 b-bottom b-top txt-sp-2">
+          Full-stack MERN app used to assist the user to track what are his/her current food stocks.
+          <div class="collapse" id="pro-1">
+            <div class="font-size-xs">
+              <br><ul>
+                <li>Built the UX/UI using React, CSS3 and Bootstrap, and connect it to the back-end using RESTful API</li>
+                <li>Used Mongoose and Javascript to manipulate the database hosted on MongoDB</li>
+                <li>Incorporated JSON Web Token (JWT) authentication to provide users with secure account management</li>
+                <li>Used Github for version control during development</li>
+              </ul>
+              <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://groceries-helper.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a>            
+            </div>
+          </div>
+        </div>
+        <a data-toggle="collapse" href="#pro-1" role="button" aria-expanded="false" aria-controls="collapseExample"class="pad-5 pad-6 font font-4 font-size-l w-3 txt-3 b-bottom b-top toggle">+</a>
+      </div>
+    </div>
+    <div class="pad-3 pad-4 flex flex-2">
+      <div class="pad-5 pad-6 font-3 font-size-xs w-1 b-bottom txt-sp-3">
+          <div>PROJECT:
+              <br>
+              Datebase
+          </div>
+          <br>
+          <div>TECHNOLOGIES:
+              <br>
+              Python, Django, PostgreSQL, AWS <br>HTML5, CSS3, Materialize, Javascript
+          </div>
+      </div>
+      <div class="flex">
+        <div class="pad-5 pad-6 font-2 font-size-s w-2 b-bottom txt-sp-2">
+          Web platform designed to help singles tackle the messy world of dating. Users can store their dating contacts and track their dating activity all in one convenient place.
+          <div class="collapse" id="pro-2">
+            <div class="font-size-xs">
+              <br><ul>
+                <li>Worked in a team of four using Git for version control and tested features on branches before merging onto the master branch</li>
+                <li>Coding lead of the project, ensure the quality and operation of the back-end and front-end development</li>
+                <li>Built the app with CRUD functionality using Python on Django’s framework, HTML5, CSS3,  and JavaScript to create front-end views, and PostgreSQL to store and retrieve data</li>
+                <li>Incorporated Google Calendar API and Yelp API for added user features and utilized AWS to add image upload capabilities</li>
+              </ul>
+              <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://datebase-app.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a>            
+            </div>
+          </div>
+        </div>
+        <a data-toggle="collapse" href="#pro-2" role="button" aria-expanded="false" aria-controls="pro-2"class="pad-5 pad-6 font font-4 font-size-l w-3 txt-3 b-bottom toggle">+</a>
+        </div>
+    </div>
+    <div class="pad-3 pad-4 flex flex-2">
+      <div class="pad-5 pad-6 font-3 font-size-xs w-1 b-bottom txt-sp-3">
+          <div>PROJECT:
+              <br>
+              Travel Track
+          </div>
+          <br>
+          <div>TECHNOLOGIES:
+              <br>
+              Javascript, Node, MongoDB, <br>HTML5, CSS3, EJS, Mongoose
+          </div>
+      </div>
+      <div class="flex">
+        <div class="pad-5 pad-6 font-2 font-size-s w-2 b-bottom txt-sp-2">
+            Travel-track is full stack application offering a trip tracking service and a trip organizational service.
+          <div class="collapse" id="pro-3">
+            <div class="font-size-xs">
+              <br><ul>
+                <li>Built the app with CRUD functionality on Node.js’s framework Express</li>
+                <li>Used JavaScript to write back-end; HTML5, CSS3 and Embedded JavaScript (EJS) to write front-end views and UI</li>
+                <li>Manipulated a NoSQL database on MongoDB using Mongoose</li>
+                <li>Incorporated OAuth2 to provide users with secure account management</li>
+                <li>Used Github for version control during development</li>
+              </ul>
+              <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://travel-track.herokuapp.com/" target="_blank" class="font link txt-sp-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <a data-toggle="collapse" href="#pro-3" role="button" aria-expanded="false" aria-controls="pro-3"class="pad-5 pad-6 font font-4 font-size-l w-3 txt-3 b-bottom toggle">+</a>
+      </div>
+    </div>
+    <div class="pad-3 pad-4 flex flex-2">
+      <div class="pad-5 pad-6 font-3 font-size-xs w-1 b-bottom txt-sp-3">
+          <div>PROJECT:
+              <br>
+              War Card Game
+          </div>
+          <br>
+          <div>TECHNOLOGIES:
+              <br>
+              Javascript, HTML5, CSS3
+          </div>
+      </div>
+      <div class="flex">
+        <div class="pad-5 pad-6 font-2 font-size-s w-2 b-bottom txt-sp-2">
+          A browser based game with two different versions of the classic card game “war”. 
+          <div class="collapse" id="pro-4">
+            <div class="font-size-xs">
+              <br><ul>
+                <li>Used JavaScript to write game logic and manipulate the DOM in order to dynamically update the de state of the app</li>
+                <li>Created the UI with HTML5 and styled with CSS3 flexbox</li>
+                <li>Used Github for version control during development</li>
+              </ul>
+              <i class="material-icons">call_made</i>&nbsp;&nbsp;<a href="https://calvinfeau.github.io/war-game/" target="_blank" class="font link txt-sp-2">View Project</a>            
+            </div>
+          </div>
+        </div>
+        <a data-toggle="collapse" href="#pro-4" role="button" aria-expanded="false" aria-controls="pro-4"class="pad-5 pad-6 font font-4 font-size-l w-3 txt-3 b-bottom toggle">+</a>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+  <!-- <section 
   id="s-3"
   class="pad-list b-color-2 font txt-sp-2 overflow-auto">
    <div id="projects-wrapper">
@@ -157,7 +374,7 @@
       </div>
     </div>
   </div>
-  </section>
+  </section> -->
 
   <section 
   id="s-4"
