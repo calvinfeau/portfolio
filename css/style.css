@@ -64,18 +64,19 @@ section {
     -o-scroll-snap-type: y mandatory;
     -moz-scroll-snap-type: y mandatory;
     -ms-scroll-snap-type: y mandatory;
+    -webkit-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
     position: fixed;
 }
 #wrapper section {
-    scroll-snap-align: start;
     -o-scroll-snap-align: start;
     -moz-scroll-snap-align: start;
     -webkit-scroll-snap-align: start;
-    scroll-snap-stop: always;
+    scroll-snap-align: start;
     -o-scroll-snap-stop: always;
     -moz-scroll-snap-stop: always;
     -webkit-scroll-snap-stop: always;
+    scroll-snap-stop: always;
 }
 
 /* Fonts */
